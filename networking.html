@@ -18,24 +18,39 @@
 <div class="section">
 
     <div class="card">
-        <h2>DNS</h2>
-        <p>DNS (Domain Name System) translates human-readable domain names into IP addresses. 
-        Our domain resolves to multiple IPv4 and IPv6 addresses, demonstrating redundancy and load balancing.</p>
+        <h2>Domain Name System (DNS)</h2>
+        <p>The Domain Name System (DNS) translates human-readable domain names into numerical IP addresses.</p>
+        <p>Using the <strong>nslookup</strong> command, we verified that MBaroonian.github.io resolves to multiple IPv4 and IPv6 addresses.</p>
+        <p>This demonstrates distributed hosting and load balancing across GitHub’s infrastructure.</p>
     </div>
 
     <div class="card">
         <h2>IP Addressing</h2>
-        <p>The website resolves to both IPv4 and IPv6 addresses. 
-        IPv4 uses 32-bit addressing while IPv6 uses 128-bit addressing for larger address space.</p>
+        <p>The domain resolves to both:</p>
+        <p><strong>IPv4:</strong> 32-bit addressing (e.g., 185.199.109.153)</p>
+        <p><strong>IPv6:</strong> 128-bit addressing (e.g., 2606:50c0:8001::153)</p>
+        <p>The presence of both versions ensures compatibility with modern Internet networks and improves scalability.</p>
     </div>
 
     <div class="card">
-        <h2>HTTP vs HTTPS</h2>
-        <p>This website uses HTTPS, which encrypts communication using TLS over TCP/IP. 
-        HTTP traffic automatically redirects to HTTPS, ensuring secure communication.</p>
+        <h2>Transport & Application Protocols</h2>
+        <p>This website communicates using:</p>
+        <p><strong>Application Layer:</strong> HTTPS</p>
+        <p><strong>Transport Layer:</strong> TCP</p>
+        <p>HTTPS encrypts data using TLS, ensuring confidentiality and integrity between client and server.</p>
+        <p>TCP guarantees reliable, ordered delivery of data packets.</p>
+    </div>
+
+    <div class="card">
+        <h2>HTTP Response & Headers</h2>
+        <p>Using Chrome Developer Tools, we verified:</p>
+        <p><strong>Status Code:</strong> 200 OK</p>
+        <p><strong>Protocol:</strong> HTTPS</p>
+        <p>Security headers such as <strong>Strict-Transport-Security</strong> confirm enforced encrypted communication.</p>
     </div>
 
 </div>
+
 
 </body>
 </html>
