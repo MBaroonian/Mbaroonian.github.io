@@ -13,17 +13,7 @@
     <title>Computer Networking Project 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <script>
-function sanitize(input) {
-    return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-function displayInput() {
-    let input = document.getElementById("userInput").value;
-    let safeInput = sanitize(input);
-    document.getElementById("output").innerHTML = safeInput;
-}
-</script>
+ 
 <body>
 
 <header>
@@ -64,4 +54,15 @@ function displayInput() {
 </div>
 
 </body>
+       <script>
+function sanitize(input) {
+    return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function displayInput() {
+    let input = document.getElementById("userInput").value;
+    let safeInput = sanitize(input);
+    document.getElementById("output").innerHTML = safeInput;
+}
+</script>
 </html>
