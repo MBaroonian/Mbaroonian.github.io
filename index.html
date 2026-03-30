@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R6MSRV3YM8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R6MSRV3YM8');
+</script>
     <title>Computer Networking Project 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <script>
+function sanitize(input) {
+    return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function displayInput() {
+    let input = document.getElementById("userInput").value;
+    let safeInput = sanitize(input);
+    document.getElementById("output").innerHTML = safeInput;
+}
+</script>
 <body>
 
 <header>
